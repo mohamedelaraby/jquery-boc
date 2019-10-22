@@ -38,5 +38,9 @@
      // Specific link color
     $('a[href="https://yahoo.com"]').css('color','#d90838');
     $('a[href="https://google.com"]').css('background','#c598a7');
-
+    
+    // Hide everything
+    $('*').hide();
+    // Show every thing
+    $('*').show();
 });
