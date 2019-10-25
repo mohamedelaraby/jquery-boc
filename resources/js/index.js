@@ -315,16 +315,18 @@ $(document).ready(function () {
     //     $('#box').stop();
     // });
 
-     $('#moveRight').click(function(){
-        $('#box').animate({
-            width:'500px',
-            hieght:'500px'
-        });
-     });
-
-
-
-
-
+    //  $('#moveRight').click(function(){
+    //     $('#box').animate({
+    //         width:'500px',
+    //         hieght:'500px'
+    //     });
+    //  });
 
 });
+
+
+//////////////////////////////// [ Ajax ]
+
+$(document).ready(function () {
+    $('#result').load('ajax.html');
+}); 
