@@ -23,3 +23,20 @@ body{
     font-size: 3rem;
     text-align: center;
 }
+#header{
+    position: relative;
+    #Secondbox{
+        background: #ff0000;
+        width: 10px;
+        height: 100px;
+        position: absolute;
+    }
+  
+}
+
+.secondbox{
+    background: #ff0000;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}

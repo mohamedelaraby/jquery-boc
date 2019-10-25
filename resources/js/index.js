@@ -231,34 +231,100 @@ $(document).ready(function(){
     //$('p.par1').wrap('<h2 class="display-4">');
     //$('p').wrapAll('<h3 class="display-3">');
 
-        // add item to the ul from readin the input value
-        $('#addItem').on('keyup', function(e){
-            // Get the code of the input
-            // let code = e.which;
-            // if(code == 13){
-            //     e.preventDefault();
-            //     $('#list').append('<li class="list-group-item">'+e.target.value+'</li>');
-            // }
+        // // add item to the ul from readin the input value
+        // $('#addItem').on('keyup', function(e){
+        //     // Get the code of the input
+        //     // let code = e.which;
+        //     // if(code == 13){
+        //     //     e.preventDefault();
+        //     //     $('#list').append('<li class="list-group-item">'+e.target.value+'</li>');
+        //     // }
 
-            // arrays
+        //     // arrays
 
-            // let names = [
-            //     'brad', 'helllen', 'bradesg'
-            // ];
+        //     // let names = [
+        //     //     'brad', 'helllen', 'bradesg'
+        //     // ];
 
-            // $.each(names, function(i, val){
-            //     //$('p.test').text(val);
-            //     $('ul#list').append('<li class="list-group-item">' +val+'</li>');
-            // });
+        //     // $.each(names, function(i, val){
+        //     //     //$('p.test').text(val);
+        //     //     $('ul#list').append('<li class="list-group-item">' +val+'</li>');
+        //     // });
 
-            // Convert list items into array 
-            let newItem = $('ul#list').toArray();
-            $.each(newItem, function(i , val){
-                console.log(val.Class);
-            })
+        //     // Convert list items into array 
+        //     let newItem = $('ul#list').toArray();
+        //     $.each(newItem, function(i , val){
+        //         console.log(val.Class);
+        //     })
 
-        });
+        // });
 
 });
 
 
+////////////////////////////[ DOM Manipulation ]//////////
+$(document).ready(function () {
+    // // Fade out
+    // $('#btnFadeOut').click(function(){
+    //     $('#box').fadeOut(3000, function(){
+    //         $('#btnFadeOut').text('It`s gone');
+    //     });
+    // });
+
+    // // Fade in
+    // $('#btnFadeIn').on('click',function(){
+    //     $('#box').fadeIn(3000, function(){
+    //         $('#btnFadeIn').text('it`s in now');
+    //     });
+    // });
+
+    // // Fade Toggle
+    // $('#btnFadeTog').on('click',function(){
+    //     $('#box').fadeToggle(2000,function () {
+    //         $('#btnFadeTog').text('it`s Toggle');
+    //     });
+    // });
+    
+    
+    
+    // Slide animation
+
+    // Slide up
+    // $('#btnSlideUp').on('click',function(){
+    //     $('#box').slideUp(2000,function () {
+    //         $('#btnSlideUp').text('it`s slide up');
+    //     });
+    // });
+    
+    // // Slide Down
+    // $('#btnSlideDown').on('click',function(){
+    //     $('#box').slideDown(2000,function () {
+    //         $('#btnSlideDown').text('it`s slide down');
+    //     });
+    // });
+     
+    // // Slide Toggle
+    // $('#btnSlideTog').on('click',function(){
+    //     $('#box').slideToggle(2000,function () {
+    //         $('#btnSlideTog').text('it`s Toggle');
+    //     });
+    // });
+
+    // // Stop slide animation
+    // $('#btnSlideStop').click(function(){
+    //     $('#box').stop();
+    // });
+
+     $('#moveRight').click(function(){
+        $('#box').animate({
+            width:'500px',
+            hieght:'500px'
+        });
+     });
+
+
+
+
+
+
+});
