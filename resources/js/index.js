@@ -153,21 +153,112 @@ $(document).ready(function(){
     // });
 
     // Submit
-    $('#form').submit(function(e){
-        e.preventDefault();
-        //  Get the value of input
-        let name = $('input#name').val();
+    // $('#form').submit(function(e){
+    //     e.preventDefault();
+    //     //  Get the value of input
+    //     let name = $('input#name').val();
 
-        // Get the email address
-        let email = $('input#email').val();
+    //     // Get the email address
+    //     let email = $('input#email').val();
 
-        $('.lead').html('name : ' + name + ' '  + 'Email: ' + email);
-
-
-    });
+    //     $('.lead').html('name : ' + name + ' '  + 'Email: ' + email);
 
 
-
-
+    // });
 
 });
+
+////////////////////////////[ DOM Manipulation ]//////////
+
+$(document).ready(function(){
+    // // Change the background of teh first text
+    // $('p.par1').css({
+    //     color:'#f4f4f4',
+    //     background:'#ccc'
+    // })
+
+    // // Change the font size -f button
+    // $('#btn1').css({
+    //     color:'#f4f4f4',
+    //     background:'#555'
+    // });
+
+   // $('p.par1').addClass('paragraph');
+     
+    // [ Change html elements content ]
+    // $('#btn1').on('click', function(){
+    //     $('p.par1').text('djfkghskdjfhgsdjfmcxbhgkdfhgere');
+    // });
+
+    // append html elemnt  - Add element to the end 
+    // $('#list').append('<li class="list-group-item">Appned list item</li>');
+    // $('ul#list').append('<li class="list-group-item">Appned list item</li>');
+
+    // // Prepend - Add element to the top
+    // $('#list').prepend('<li class="list-group-item">Prepend at top list item</li>')
+
+
+    // append to && prepend to
+    // $('p.par2').prependTo('p.par1');
+    // $('.par1').appendTo('.par2');
+
+    // [Before && After ]
+    // $('ul').before('<h3 class="display-4 bg-success d-inline-block">BEFORE</h3>');
+    // $('p.par1').before('<h3 class="display-4 bg-success d-inline-block">BEFORE</h3>');
+    
+    // $('p.par2').after('<h3 class="display-4 bg-success d-inline-block">AFTER</h3>');
+    // $('p.par1').after('<h3 class="display-4 bg-success d-inline-block">AFTER</h3>');
+
+
+    // EMPTY && DETACH
+    // $('ul').empty();
+    // $('p.par1').empty();
+
+    // $('ul').detach();
+    // $('p.par2').detach();
+
+    // ATTRIBUTES
+    // $('a').attr('target', '_blank');
+
+    //  // get the attributes
+    //  $('p.par1').html($('a').attr('href'));
+    //  $('.par2').text($('a').attr('href'));
+
+        // Remove the attributes
+    //$('a').removeAttr('target');
+
+    // Wrap elements
+    //$('p.par1').wrap('<h2 class="display-4">');
+    //$('p').wrapAll('<h3 class="display-3">');
+
+        // add item to the ul from readin the input value
+        $('#addItem').on('keyup', function(e){
+            // Get the code of the input
+            // let code = e.which;
+            // if(code == 13){
+            //     e.preventDefault();
+            //     $('#list').append('<li class="list-group-item">'+e.target.value+'</li>');
+            // }
+
+            // arrays
+
+            // let names = [
+            //     'brad', 'helllen', 'bradesg'
+            // ];
+
+            // $.each(names, function(i, val){
+            //     //$('p.test').text(val);
+            //     $('ul#list').append('<li class="list-group-item">' +val+'</li>');
+            // });
+
+            // Convert list items into array 
+            let newItem = $('ul#list').toArray();
+            $.each(newItem, function(i , val){
+                console.log(val.Class);
+            })
+
+        });
+
+});
+
+
